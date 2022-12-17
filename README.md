@@ -1,4 +1,4 @@
-# 马原狗屎考试题库
+# 马原政治课题库
 
 在[这里](
 	https://cuc-life-hack.github.io/commie-question-base/dist/
