@@ -2,13 +2,22 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>毛概题库</title>
+	<title>马原狗屎考试题库 · CUC Life Hack</title>
 	
-  <script type="module" crossorigin src="https://wangnianyi2001.github.io/maogai/dist/assets/index.b76b9a8b.js"></script>
-  <link rel="stylesheet" href="https://wangnianyi2001.github.io/maogai/dist/assets/index.bcd30a5f.css">
+  <script type="module" crossorigin src="https://wangnianyi2001.github.io/maogai/dist/assets/index.beec89b8.js"></script>
+  <link rel="stylesheet" href="https://wangnianyi2001.github.io/maogai/dist/assets/index.13534806.css">
 </head>
-<body>
-	<input id="search" placeholder="搜索题目" />
+<body onload="LoadQuestionBase();">
+	<h1>马原狗屎考试题库 · CUC Life Hack</h1>
+	<select id="question-base" oninput="LoadQuestionBase()">
+		<option value="">选择题库</option>
+		<option value="2021-maogai">2021 毛概</option>
+		<option value="2022-jindaishi">2022 近代史</option>
+	</select>
+	<input id="search" placeholder="搜索题目" value=""
+		onchange="OnSearch();"
+		onkeyup="OnSearch();"
+	/>
 	<main id="result"></main>
 	
 </body>

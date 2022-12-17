@@ -1,6 +1,7 @@
 {
 	"scripts": {
 		"dev": "npx vite dev",
+		"prebuild": "rm -rf dist",
 		"build": "npx vite build"
 	},
 	"devDependencies": {
