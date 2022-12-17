@@ -1,0 +1,13 @@
+{
+	"scripts": {
+		"dev": "npx vite dev",
+		"build": "npx vite build"
+	},
+	"devDependencies": {
+		"@nianyi-wang/element": "^0.0.6",
+		"fuzzysort": "^2.0.4",
+		"lodash": "^4.17.21",
+		"sass": "^1.52.3",
+		"vite": "^2.9.12"
+	}
+}

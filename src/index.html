@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>马原狗屎考试题库 · CUC Life Hack</title>
+	<link rel="stylesheet" href="./index.scss" />
+</head>
+<body onload="LoadQuestionBase();">
+	<h1>马原狗屎考试题库 · CUC Life Hack</h1>
+	<select id="question-base" oninput="LoadQuestionBase()">
+		<option value="">选择题库</option>
+		<option value="2021-maogai">2021 毛概</option>
+		<option value="2022-jindaishi">2022 近代史</option>
+	</select>
+	<input id="search" placeholder="搜索题目" value=""
+		onchange="OnSearch();"
+		onkeyup="OnSearch();"
+	/>
+	<main id="result"></main>
+	<script type="module" src="./index.js"></script>
+</body>
+</html>
