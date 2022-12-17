@@ -18,9 +18,9 @@ function MakeResult(result) {
 			}),
 			Ne.Create('ul', {
 				classes: 'options',
-				children: result.obj[1].map(option => Ne.Create('li', {
-					classes: _.filter(['option', option[1] && 'correct']),
-					text: option[0]
+				children: result.obj[1].options.map(option => Ne.Create('li', {
+					classes: _.filter(['option', option.correct && 'correct']),
+					text: option.content
 				}))
 			})
 		]
@@ -50,7 +50,8 @@ function OnSearch() {
 	const query = document.getElementById('search').value;
 	if(!/\S/.test(query))
 		return;
-	for(const result of fuzzy.go(query, questionBase, searchConfig))
+	const searchBase = questionBase.map(q => [q.content, q]);
+	for(const result of fuzzy.go(query, searchBase, searchConfig))
 		$result.appendChild(MakeResult(result));
 }
 window.OnSearch = _.throttle(OnSearch, 500);
