@@ -1,4 +1,4 @@
-# 马原政治课题库
+# 马院政治课题库
 
 在[这里](
 	https://cuc-life-hack.github.io/commie-question-base/dist/

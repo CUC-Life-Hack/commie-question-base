@@ -1,4 +1,5 @@
 {
+	"name": "commie-question-base",
 	"scripts": {
 		"dev": "npx vite dev",
 		"prebuild": "rm -rf dist",
