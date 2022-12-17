@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	base: 'https://wangnianyi2001.github.io/maogai/dist',
+	base: 'https://cuc-life-hack.github.io/commie-question-base/dist/',
 	root: 'src',
 	build: {
 		outDir: '../dist'
