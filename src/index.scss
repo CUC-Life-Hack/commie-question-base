@@ -1,0 +1,35 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 1rem;
+
+	#search {
+		display: block;
+
+		font-size: 1.5em;
+	}
+
+	h1, h2, h3, h4, h5, h6, p, ul, ol {
+		margin: 0;
+	}
+
+	.question {
+		margin: 1em 0;
+	}
+
+	.options {
+		padding-left: 1em;
+
+		.option {
+			list-style: none;
+	
+			&.correct {
+				color: red;
+				&::before {
+					content: '✔';
+				}
+			}
+		}
+	}
+}
